@@ -1,0 +1,154 @@
+/* --- Services Hero Header --- */
+.servicesHero {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-xl) var(--layout-content-padding);
+  text-align: center;
+}
+
+.headerContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pageHeadline {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+  font-weight: 700;
+}
+
+.pageSubtext {
+  font-size: 1.15rem;
+  margin-bottom: var(--space-lg);
+  color: var(--color-background-light);
+}
+
+.heroBtnWrapper {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* --- Services Grid Section --- */
+.servicesGridSection {
+  padding: var(--space-xl) var(--layout-content-padding);
+  background-color: var(--color-background-light);
+}
+
+.gridContainer {
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.serviceCard {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-smooth);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-4px);
+}
+
+.categoryImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cardPadding {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.categoryTitle {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.categoryDescription {
+  color: var(--color-text-dark);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+}
+
+.serviceList {
+  flex-grow: 1;
+}
+
+.serviceList ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--space-md);
+}
+
+.serviceList li {
+  font-size: 0.85rem;
+  padding: 0.25rem 0;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.serviceList li::before {
+  content: "✓";
+  color: var(--color-secondary);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.serviceCtaLink {
+  margin-top: auto;
+  text-decoration: none;
+}
+
+/* --- Technology CTA Section --- */
+.technologyCta {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  padding: var(--space-xl) var(--layout-content-padding);
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.technologyCta h2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
+.technologyCta p {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-lg);
+}
+
+.ctaLink {
+  text-decoration: none;
+  display: inline-block;
+}

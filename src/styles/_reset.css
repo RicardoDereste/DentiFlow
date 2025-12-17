@@ -1,0 +1,53 @@
+/* Global Reset & Box Model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Body Styles and Global Font */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: var(--color-text-dark);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased; /* Better font rendering */
+  min-height: 100vh;
+}
+
+/* Base Typography for Readability */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+  color: var(--color-dark); /* Headings should be darker for contrast */
+}
+
+p {
+  margin-bottom: var(--space-sm);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* Image behavior for responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

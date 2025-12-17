@@ -1,0 +1,170 @@
+/* --- Header & Container Styles --- */
+
+.navHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.navContainer {
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  padding: var(--space-sm) var(--layout-content-padding);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Logo Styling --- */
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  z-index: 1001;
+}
+
+/* --- Desktop Links (Hidden by Default on Mobile) --- */
+
+.desktopLinks {
+  display: none;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.navLink {
+  color: var(--color-text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--color-secondary);
+}
+
+/* Active Link Styling (Visual indicator for the current page) */
+.activeLink {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.activeLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+/* --- Hamburger Button (Mobile Only) --- */
+
+.hamburgerButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  transition: transform 0.3s ease;
+}
+
+/* Scales down the button when open to make the 'X' look consistent in size */
+.menuOpenScale {
+  transform: scale(1);
+}
+
+.hamburgerLine {
+  width: 100%;
+  height: 3px;
+  background: var(--color-text-dark);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+/* Ensures the lines turn a visible color (blue) when the white menu is open */
+.hamburgerLineOpenColor {
+  background: var(--color-primary);
+}
+
+/* Hamburger transition to 'X' (Open states) */
+
+.hamburgerLineOpen:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburgerLineOpen:nth-child(2) {
+  opacity: 0; /* Hides the middle line */
+}
+.hamburgerLineOpen:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* --- Mobile Menu (Full-screen overlay on small screens) --- */
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--space-xl);
+
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.menuOpen {
+  transform: translateX(0);
+}
+
+.mobileLink {
+  padding: 1rem 0;
+  text-decoration: none;
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.mobileLink:hover {
+  color: var(--color-primary);
+}
+
+.mobileCta {
+  margin-top: var(--space-lg);
+}
+
+/* --- DESKTOP MEDIA QUERY --- */
+
+@media (min-width: 768px) {
+  .desktopLinks {
+    display: flex;
+  }
+
+  .hamburgerButton {
+    display: none;
+  }
+  .mobileMenu {
+    display: none;
+  }
+}

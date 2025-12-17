@@ -1,0 +1,116 @@
+/* --- 1. Base Styles (Applied to all buttons) --- */
+.buttonBase {
+  /* Reset and Basic Look */
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius-base);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+/* --- 2. Size Variants --- */
+
+.small {
+  padding: 0.5rem var(--space-sm);
+  font-size: 0.875rem;
+}
+
+.medium {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
+
+.large {
+  padding: 1rem 2rem;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+/* --- 3. Color/Style Variants --- */
+
+/* ** Primary (High Visibility CTA: Book Appointment) ** */
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 2px solid var(--color-primary); /* Slightly thicker border for definition */
+  box-shadow: 0 4px 6px rgba(0, 119, 194, 0.3); /* Shadow based on primary color */
+}
+
+.primary:hover {
+  background-color: #005f9d; /* Slightly darker shade of primary */
+  border-color: #005f9d;
+  transform: translateY(-2px); /* Subtle lift on hover */
+  box-shadow: 0 6px 15px rgba(0, 119, 194, 0.4);
+}
+
+/* ** Secondary (Alternative CTA: Learn More / Submit Form) ** */
+.secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-dark); /* Darker text for contrast on bright background */
+  border: 2px solid var(--color-secondary);
+}
+
+.secondary:hover {
+  background-color: #1aa67e; /* Slightly darker shade of secondary */
+  border-color: #1aa67e;
+  transform: translateY(-2px);
+}
+
+/* ** Accent (For special features or promotions) ** */
+.accent {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+  border: 2px solid var(--color-accent);
+}
+
+.accent:hover {
+  background-color: #e68a00; /* Slightly darker shade of accent */
+  border-color: #e68a00;
+  transform: translateY(-2px);
+}
+
+/* ** Outline (Tertiary Action: View Pricing) ** */
+.outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--box-shadow-smooth);
+}
+
+/* ** Text (For links/actions embedded in text) ** */
+.text {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: none;
+  padding: 0;
+  font-weight: 500;
+}
+
+.text:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* --- 4. Disabled State --- */
+
+.buttonBase:disabled,
+.buttonBase[disabled] {
+  background-color: var(--color-border); /* Light gray background */
+  color: var(--color-text-light);
+  border-color: var(--color-border);
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none; /* Remove hover animation when disabled */
+  box-shadow: none;
+}

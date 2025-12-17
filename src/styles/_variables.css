@@ -1,0 +1,27 @@
+:root {
+  /* --- 1. Branding Colors (Trust, Cleanliness, Professionalism) --- */
+  --color-primary: #0077c2; /* Deep, Trustworthy Blue */
+  --color-secondary: #20c997; /* Fresh Teal/Mint Green Accent */
+  --color-accent: #ff9900; /* Warm Orange for CTAs/Highlight */
+
+  --color-white: #ffffff;
+  --color-dark: #1f2937; /* Very dark text/background for contrast */
+  --color-text-dark: #374151; /* Standard readable dark gray text */
+  --color-text-light: #6b7280; /* Light gray for supporting text */
+
+  --color-background-light: #f9fafb; /* Soft light background for contrast sections */
+  --color-border: #e5e7eb; /* Light neutral border color */
+
+  /* --- 2. Spacing (Modular Scale - Multiples of 8px) --- */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 1rem; /* 16px */
+  --space-md: 2rem; /* 32px */
+  --space-lg: 4rem; /* 64px */
+  --space-xl: 6rem; /* 96px */
+
+  /* --- 3. Layout & Effects --- */
+  --layout-max-width: 1280px;
+  --layout-content-padding: 1.5rem; /* Base side padding on mobile */
+  --border-radius-base: 6px;
+  --box-shadow-smooth: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow for elevation */
+}

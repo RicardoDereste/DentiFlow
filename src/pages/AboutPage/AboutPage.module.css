@@ -1,0 +1,147 @@
+/* --- General Styles --- */
+.aboutPage section {
+  padding: var(--space-xl) var(--layout-content-padding);
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+  font-weight: 700;
+}
+
+.sectionSubtext {
+  font-size: 1.15rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- 1. Mission Section --- */
+.missionSection {
+  background-color: var(--color-background-light);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  text-align: center;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .missionSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.pageHeadline {
+  font-size: 2.8rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.missionHighlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-bottom: var(--space-lg);
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.missionHighlights i {
+  margin-right: 8px;
+}
+
+.missionImageContainer {
+  width: 100%;
+}
+
+.actualMissionImage {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-smooth);
+  object-fit: cover;
+}
+
+/* --- 2. Meet the Team Section --- */
+.teamGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .teamGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+}
+
+.teamCard {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-base);
+  overflow: hidden;
+  box-shadow: var(--box-shadow-smooth);
+  transition: transform 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-5px);
+}
+
+.memberImageContainer {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.actualMemberImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.teamCard:hover .actualMemberImage {
+  transform: scale(1.05);
+}
+
+.memberInfo {
+  padding: var(--space-md);
+}
+
+.memberTitle {
+  font-style: italic;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+  display: block;
+}
+
+/* --- 3. Final CTA Section --- */
+.servicesCtaSection {
+  background-color: var(--color-accent); /* Orange background */
+  text-align: center;
+  border-radius: var(--border-radius-base);
+  margin-bottom: var(--space-xl) !important;
+}
+
+.ctaContent h2 {
+  font-size: 2.2rem;
+  margin-bottom: var(--space-lg);
+  color: var(--color-dark);
+  font-weight: 700;
+}

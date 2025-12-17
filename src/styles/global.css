@@ -1,0 +1,40 @@
+/* Main App Structure */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content Area (To ensure content pushes footer down) */
+main {
+  flex-grow: 1;
+  padding-top: 0;
+}
+
+/* --- Content Container (Used by all pages/sections) --- */
+.content-container {
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  padding-left: var(--layout-content-padding);
+  padding-right: var(--layout-content-padding);
+}
+
+/* --- Section Padding Consistency --- */
+section {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+/* --- Utility Classes (Optional but useful) --- */
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-light {
+  background-color: var(--color-background-light);
+}
