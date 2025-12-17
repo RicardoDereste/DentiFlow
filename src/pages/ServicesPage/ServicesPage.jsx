@@ -6,7 +6,7 @@ import Button from "../../components/Button/Button";
 const serviceCategories = [
   {
     category: "General Dentistry",
-    image: "/general-dentistry.jpg",
+    image: "/images/general-dentistry.jpg",
     description:
       "Foundation for a healthy smile, including routine check-ups, professional cleanings, and fluoride treatments.",
     services: [
@@ -19,7 +19,7 @@ const serviceCategories = [
   },
   {
     category: "Cosmetic Dentistry",
-    image: "cosmetic-dentistry.jpg",
+    image: "/images/cosmetic-dentistry.jpg",
     description:
       "Enhance the appearance of your teeth, gums, and bite for a stunning, confident smile.",
     services: [
@@ -32,7 +32,7 @@ const serviceCategories = [
   },
   {
     category: "Restorative & Implants",
-    image: "/restorative-implants.jpg",
+    image: "/images/restorative-implants.jpg",
     description:
       "Repairing or replacing damaged or missing teeth to restore function and aesthetics.",
     services: [
@@ -45,7 +45,7 @@ const serviceCategories = [
   },
   {
     category: "Emergency & Specialty",
-    image: "/emergency-specialty.jpg",
+    image: "/images/emergency-specialty.jpg",
     description:
       "Immediate care for dental trauma and specialized procedures requiring advanced skill.",
     services: [

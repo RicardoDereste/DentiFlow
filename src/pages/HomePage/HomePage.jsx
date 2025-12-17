@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import styles from "./HomePage.module.css";
 import Button from "../../components/Button/Button";
 
-const heroImagePath = "/dental-office-modern.jpg";
-const generalServiceImage = "/general-dentistry.jpg";
-const cosmeticServiceImage = "/cosmetic-dentistry.jpg";
-const implantServiceImage = "/implants-surgery.jpg";
+const heroImagePath = "/images/dental-office-modern.jpg";
+const generalServiceImage = "/images/general-dentistry.jpg";
+const cosmeticServiceImage = "/images/cosmetic-dentistry.jpg";
+const implantServiceImage = "/images/implants-surgery.jpg";
 
 const HomePage = () => {
   return (

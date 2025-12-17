@@ -4,26 +4,26 @@ import styles from "./AboutPage.module.css";
 import Button from "../../components/Button/Button";
 
 // Image paths
-const clinicHeroImage = "/clinic-commitment.jpg";
+const clinicHeroImage = "/images/clinic-commitment.jpg";
 
 const teamMembers = [
   {
     name: "Dr. Evelyn Smith, DDS",
     title: "Principal Dentist & Founder",
     bio: "With over 15 years of practice, Dr. Smith is dedicated to painless and preventative dentistry. She specializes in cosmetic procedures and is passionate about using the latest digital technology.",
-    image: "/doctor-1.jpg",
+    image: "/images/doctor-1.jpg",
   },
   {
     name: "Dr. Alex Johnson, DMD",
     title: "General & Restorative Dentist",
     bio: "Dr. Johnson focuses on restorative treatments, including implants and complex root canals. His patient-first approach emphasizes clear communication and comfort.",
-    image: "/doctor-2.jpg",
+    image: "/images/doctor-2.jpg",
   },
   {
     name: "Sarah Lee, RDH",
     title: "Registered Dental Hygienist",
     bio: "Sarah is committed to patient education and maintaining long-term oral health. She ensures every cleaning is thorough, gentle, and tailored to individual needs.",
-    image: "/doctor-3.jpg",
+    image: "/images/doctor-3.jpg",
   },
 ];
 
